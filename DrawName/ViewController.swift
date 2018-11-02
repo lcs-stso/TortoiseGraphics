@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  DrawMyName
+//  DrawName
 //
-//  Created by Tso, Sarah on 2018-11-01.
+//  Created by Tso, Sarah on 2018-11-02.
 //
 
 import Cocoa

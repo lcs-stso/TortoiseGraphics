@@ -41,11 +41,11 @@
 		14D753A91FE173C80038F931 /* CommandFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D753A81FE173C80038F931 /* CommandFill.swift */; };
 		14D753AB1FE17D290038F931 /* Vec2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D753AA1FE17D290038F931 /* Vec2D.swift */; };
 		3F1C677C21824C4300F42211 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C677B21824C4300F42211 /* Extensions.swift */; };
-		3F746AF3218BE51700C9155C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F746AF2218BE51700C9155C /* AppDelegate.swift */; };
-		3F746AF5218BE51700C9155C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F746AF4218BE51700C9155C /* ViewController.swift */; };
-		3F746AF7218BE51A00C9155C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F746AF6218BE51A00C9155C /* Assets.xcassets */; };
-		3F746AFA218BE51A00C9155C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F746AF8218BE51A00C9155C /* Main.storyboard */; };
-		3F746B01218BE6D800C9155C /* CanvasView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F746B00218BE6D800C9155C /* CanvasView .swift */; };
+		3F23845D218CDC03007A3232 /* TortoiseGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* TortoiseGraphics.framework */; };
+		3F238465218CDC69007A3232 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238464218CDC69007A3232 /* AppDelegate.swift */; };
+		3F238467218CDC69007A3232 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238466218CDC69007A3232 /* ViewController.swift */; };
+		3F238469218CDC69007A3232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F238468218CDC69007A3232 /* Assets.xcassets */; };
+		3F23846C218CDC69007A3232 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F23846A218CDC69007A3232 /* Main.storyboard */; };
 		OBJ_109 /* TortoiseGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* TortoiseGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,24 +94,32 @@
 		14D753A81FE173C80038F931 /* CommandFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandFill.swift; sourceTree = "<group>"; };
 		14D753AA1FE17D290038F931 /* Vec2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vec2D.swift; sourceTree = "<group>"; };
 		3F1C677B21824C4300F42211 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3F238462218CDC69007A3232 /* DrawName.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawName.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F238464218CDC69007A3232 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F238466218CDC69007A3232 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F238468218CDC69007A3232 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F23846B218CDC69007A3232 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F23846D218CDC69007A3232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F23846E218CDC69007A3232 /* DrawName.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DrawName.entitlements; sourceTree = "<group>"; };
 		3F746AF0218BE51700C9155C /* DrawMyName.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawMyName.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F746AF2218BE51700C9155C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F746AF4218BE51700C9155C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F746AF6218BE51A00C9155C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3F746AF9218BE51A00C9155C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3F746AFB218BE51A00C9155C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F746AFC218BE51A00C9155C /* DrawMyName.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DrawMyName.entitlements; sourceTree = "<group>"; };
-		3F746B00218BE6D800C9155C /* CanvasView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CanvasView .swift"; sourceTree = "<group>"; };
 		OBJ_53 /* TortoiseGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TortoiseGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_54 /* TortoiseGraphicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = TortoiseGraphicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3F23845F218CDC69007A3232 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F746AED218BE51700C9155C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F23845D218CDC03007A3232 /* TortoiseGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,18 +178,24 @@
 			path = Playground;
 			sourceTree = "<group>";
 		};
-		3F746AF1218BE51700C9155C /* DrawMyName */ = {
+		3F23845C218CDC03007A3232 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3F746AF2218BE51700C9155C /* AppDelegate.swift */,
-				3F746AF4218BE51700C9155C /* ViewController.swift */,
-				3F746AF6218BE51A00C9155C /* Assets.xcassets */,
-				3F746AF8218BE51A00C9155C /* Main.storyboard */,
-				3F746AFB218BE51A00C9155C /* Info.plist */,
-				3F746AFC218BE51A00C9155C /* DrawMyName.entitlements */,
-				3F746B00218BE6D800C9155C /* CanvasView .swift */,
 			);
-			path = DrawMyName;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F238463218CDC69007A3232 /* DrawName */ = {
+			isa = PBXGroup;
+			children = (
+				3F238464218CDC69007A3232 /* AppDelegate.swift */,
+				3F238466218CDC69007A3232 /* ViewController.swift */,
+				3F238468218CDC69007A3232 /* Assets.xcassets */,
+				3F23846A218CDC69007A3232 /* Main.storyboard */,
+				3F23846D218CDC69007A3232 /* Info.plist */,
+				3F23846E218CDC69007A3232 /* DrawName.entitlements */,
+			);
+			path = DrawName;
 			sourceTree = "<group>";
 		};
 		OBJ_5 = {
@@ -190,8 +204,9 @@
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				1456315C1FE4806400B3B2A9 /* Playground */,
-				3F746AF1218BE51700C9155C /* DrawMyName */,
+				3F238463218CDC69007A3232 /* DrawName */,
 				OBJ_52 /* Products */,
+				3F23845C218CDC03007A3232 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -201,6 +216,7 @@
 				OBJ_53 /* TortoiseGraphics.framework */,
 				OBJ_54 /* TortoiseGraphicsTests.xctest */,
 				3F746AF0218BE51700C9155C /* DrawMyName.app */,
+				3F238462218CDC69007A3232 /* DrawName.app */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -227,6 +243,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3F238461218CDC69007A3232 /* DrawName */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F23846F218CDC69007A3232 /* Build configuration list for PBXNativeTarget "DrawName" */;
+			buildPhases = (
+				3F23845E218CDC69007A3232 /* Sources */,
+				3F23845F218CDC69007A3232 /* Frameworks */,
+				3F238460218CDC69007A3232 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawName;
+			productName = DrawName;
+			productReference = 3F238462218CDC69007A3232 /* DrawName.app */;
+			productType = "com.apple.product-type.application";
+		};
 		3F746AEF218BE51700C9155C /* DrawMyName */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F746AFF218BE51A00C9155C /* Build configuration list for PBXNativeTarget "DrawMyName" */;
@@ -287,6 +320,10 @@
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 9999;
 				TargetAttributes = {
+					3F238461218CDC69007A3232 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+					};
 					3F746AEF218BE51700C9155C = {
 						CreatedOnToolsVersion = 10.0;
 						ProvisioningStyle = Automatic;
@@ -315,17 +352,25 @@
 				OBJ_55 /* TortoiseGraphics */,
 				OBJ_102 /* TortoiseGraphicsTests */,
 				3F746AEF218BE51700C9155C /* DrawMyName */,
+				3F238461218CDC69007A3232 /* DrawName */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3F238460218CDC69007A3232 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F238469218CDC69007A3232 /* Assets.xcassets in Resources */,
+				3F23846C218CDC69007A3232 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F746AEE218BE51700C9155C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F746AF7218BE51A00C9155C /* Assets.xcassets in Resources */,
-				3F746AFA218BE51A00C9155C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,13 +394,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3F23845E218CDC69007A3232 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F238467218CDC69007A3232 /* ViewController.swift in Sources */,
+				3F238465218CDC69007A3232 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F746AEC218BE51700C9155C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F746AF5218BE51700C9155C /* ViewController.swift in Sources */,
-				3F746B01218BE6D800C9155C /* CanvasView .swift in Sources */,
-				3F746AF3218BE51700C9155C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,10 +469,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3F746AF8218BE51A00C9155C /* Main.storyboard */ = {
+		3F23846A218CDC69007A3232 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3F746AF9218BE51A00C9155C /* Base */,
+				3F23846B218CDC69007A3232 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -429,6 +480,127 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3F238470218CDC69007A3232 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = DrawName/DrawName.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = DrawName/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.tsosarah.DrawName;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		3F238471218CDC69007A3232 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = DrawName/DrawName.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = DrawName/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.tsosarah.DrawName;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		3F746AFD218BE51A00C9155C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -694,6 +866,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F23846F218CDC69007A3232 /* Build configuration list for PBXNativeTarget "DrawName" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F238470218CDC69007A3232 /* Debug */,
+				3F238471218CDC69007A3232 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		3F746AFF218BE51A00C9155C /* Build configuration list for PBXNativeTarget "DrawMyName" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

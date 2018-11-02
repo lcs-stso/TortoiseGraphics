@@ -19,8 +19,19 @@ canvas.drawing { t in
     t.lowercasea()
     t.lowercaser()
 
-    
-    
+    //Lowercasea
+    //Turn the turtle to the correct face
+    t.setHeading(360)
+    t.forward(50)
+    t.right(90)
+    t.forward(25)
+    t.setHeading(270)
+    //Loop Down
+    t.left(20)
+    t.curve(withSides: -20, withSize: 10, drawSides: 5)
+    //Loop Up
+    t.curve(withSides: -20, withSize: 7, drawSides: 5)
+    t.right(180)
     
     
 }
