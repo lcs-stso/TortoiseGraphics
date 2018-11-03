@@ -23,13 +23,18 @@ class CanvasView: NSView {
             t.lowercasea()
             t.lowercaser()
             t.lowercaseA()
-     
-            
-            
+            t.lowercaseh()
             
             
 
+        
+                
+            
         }
     }
-    
+   
+        
+    }
+
+
 }

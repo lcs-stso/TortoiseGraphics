@@ -46,7 +46,7 @@
 		3F238467218CDC69007A3232 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238466218CDC69007A3232 /* ViewController.swift */; };
 		3F238469218CDC69007A3232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F238468218CDC69007A3232 /* Assets.xcassets */; };
 		3F23846C218CDC69007A3232 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F23846A218CDC69007A3232 /* Main.storyboard */; };
-		3F238473218CDC8D007A3232 /* DrawName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238472218CDC8D007A3232 /* DrawName.swift */; };
+		3FBF7AA0218E3BB60015A3EB /* DrawName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238472218CDC8D007A3232 /* DrawName.swift */; };
 		OBJ_109 /* TortoiseGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* TortoiseGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -401,7 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F238473218CDC8D007A3232 /* DrawName.swift in Sources */,
+				3FBF7AA0218E3BB60015A3EB /* DrawName.swift in Sources */,
 				3F238467218CDC69007A3232 /* ViewController.swift in Sources */,
 				3F238465218CDC69007A3232 /* AppDelegate.swift in Sources */,
 			);

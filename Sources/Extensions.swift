@@ -125,6 +125,30 @@ public extension Tortoise {
         //Loop right
         self.setHeading(160)
         self.curve(withSides: -20, withSize: 5, drawSides: 7)
-
     }
+        func lowercaseh () {
+
+            //Lowercase h
+            self.right(370)
+            self.curve(withSides: -50, withSize: 33, drawSides: 6)
+            //loop around
+            self.right(300)
+            self.curve(withSides: -9, withSize: 13, drawSides: 4)
+            //loop down
+            self.right(50)
+            self.curve(withSides: 1, withSize: 17, drawSides: 10)
+            self.right(180)
+            self.forward(10)
+            //loop around
+            self.curve(withSides: 10, withSize: 16, drawSides: 4)
+            //Move down
+            self.right(30)
+            self.curve(withSides: 1, withSize: 3, drawSides: 10)
+            //Loop right
+            self.setHeading(160)
+            self.curve(withSides: -20, withSize: 5, drawSides: 7)
+            self.penColor(.green)
+
+        }
+
 }
