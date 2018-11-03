@@ -14,11 +14,12 @@ class CanvasView: NSView {
         
         // Command "t" on canvas to make the turtle draw
         canvas.drawing { t in
-            
+          
+            //Start drawing my first name from top left corner
             t.penUp()
             t.goto(-150,90)
             
-            //Draw first letter
+            //Draw first name
             t.uppercaseS()
             t.lowercasea()
             t.lowercaser()
@@ -26,11 +27,15 @@ class CanvasView: NSView {
             t.lowercaseh()
             
             
-
-        
-                
+            //Start drawing my last name from the middle
+            t.setHeading(90)
+            t.penUp()
+            t.goto(150,90)
+            t.forward(30)
             
-        }
+            //Draw last name
+            t.uppercaseT()
+            
     }
    
         
