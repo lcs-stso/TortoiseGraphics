@@ -46,6 +46,7 @@
 		3F238467218CDC69007A3232 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238466218CDC69007A3232 /* ViewController.swift */; };
 		3F238469218CDC69007A3232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F238468218CDC69007A3232 /* Assets.xcassets */; };
 		3F23846C218CDC69007A3232 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F23846A218CDC69007A3232 /* Main.storyboard */; };
+		3F238473218CDC8D007A3232 /* DrawName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238472218CDC8D007A3232 /* DrawName.swift */; };
 		OBJ_109 /* TortoiseGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* TortoiseGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +102,7 @@
 		3F23846B218CDC69007A3232 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F23846D218CDC69007A3232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F23846E218CDC69007A3232 /* DrawName.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DrawName.entitlements; sourceTree = "<group>"; };
+		3F238472218CDC8D007A3232 /* DrawName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawName.swift; sourceTree = "<group>"; };
 		3F746AF0218BE51700C9155C /* DrawMyName.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawMyName.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_53 /* TortoiseGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TortoiseGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_54 /* TortoiseGraphicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = TortoiseGraphicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +196,7 @@
 				3F23846A218CDC69007A3232 /* Main.storyboard */,
 				3F23846D218CDC69007A3232 /* Info.plist */,
 				3F23846E218CDC69007A3232 /* DrawName.entitlements */,
+				3F238472218CDC8D007A3232 /* DrawName.swift */,
 			);
 			path = DrawName;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F238473218CDC8D007A3232 /* DrawName.swift in Sources */,
 				3F238467218CDC69007A3232 /* ViewController.swift in Sources */,
 				3F238465218CDC69007A3232 /* AppDelegate.swift in Sources */,
 			);

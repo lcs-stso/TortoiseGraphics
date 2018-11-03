@@ -99,4 +99,32 @@ public extension Tortoise {
     self.setHeading(160)
     self.curve(withSides: -20, withSize: 5, drawSides: 7)
     }
+
+    func lowercaseA () {
+        //Lowercasea
+        //Turn the turtle to the correct face
+        self.setHeading(360)
+        self.forward(50)
+        self.right(90)
+        self.forward(21)
+        self.setHeading(270)
+        //Loop Down
+        self.left(20)
+        self.curve(withSides: -20, withSize: 10, drawSides: 5)
+        //Loop Up
+        self.curve(withSides: -20, withSize: 7, drawSides: 5)
+        //stick the loop
+        self.curve(withSides: -30, withSize: 7, drawSides: 5)
+        //Loop Down
+        self.curve(withSides: -23, withSize: 7, drawSides: 7)
+        //Stick the lower loop
+        self.setHeading(90)
+        self.left(350)
+        self.curve(withSides: 24, withSize: 7,
+                drawSides: 8)
+        //Loop right
+        self.setHeading(160)
+        self.curve(withSides: -20, withSize: 5, drawSides: 7)
+
+    }
 }
