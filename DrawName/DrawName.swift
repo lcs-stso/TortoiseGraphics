@@ -31,15 +31,35 @@ class CanvasView: NSView {
             t.setHeading(90)
             t.penUp()
             t.goto(150,90)
-            t.forward(30)
-            
+             
             //Draw last name
             t.uppercaseT()
             
+            //lowercase s
+            t.setHeading (360)
+            t.forward(30)
+            t.right(90)
+            t.forward(60)
+            //Go straight
+            t.left(340)
+            t.curve(withSides: -45, withSize: 10, drawSides: 6)
+            //Go back
+            t.right(180)
+            t.left(351)
+            t.curve(withSides: 45, withSize: 10, drawSides: 6)
+            t.right(90)
+            //move up
+            t.right(400)
+            t.curve(withSides: -30, withSize: 13, drawSides: 6)
+            //move down
+            t.right(500)
+            t.curve(withSides: 45, withSize: 6, drawSides: 11)
+            t.right(200)
+            
+            
+            
+            
+            
     }
-   
-        
     }
-
-
 }

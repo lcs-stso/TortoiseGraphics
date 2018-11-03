@@ -152,6 +152,7 @@ public extension Tortoise {
 
     func uppercaseT () {
         //Start drawing my last name from the middle
+        self.forward(30)
         self.setHeading(90)
         self.penUp()
         self.goto(150, 90)
@@ -167,6 +168,28 @@ public extension Tortoise {
         self.right(110)
         self.curve(withSides: -20, withSize: 20, drawSides: 3)
 
+    }
+    func lowercases () {
+    //lowercase s
+    self.setHeading (360)
+    self.forward(30)
+    self.right(90)
+    self.forward(60)
+    //Go straight
+      self.left(340)
+      self.curve(withSides: -45, withSize: 10, drawSides: 6)
+    //Go back
+      self.right(180)
+      self.left(351)
+      self.curve(withSides: 45, withSize: 10, drawSides: 6)
+      self.right(90)
+    //move up
+      self.right(400)
+      self.curve(withSides: -30, withSize: 13, drawSides: 6)
+    //move down
+      self.right(500)
+      self.curve(withSides: 45, withSize: 6, drawSides: 11)
+      self.right(200)
     }
 
 }
