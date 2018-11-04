@@ -192,4 +192,18 @@ public extension Tortoise {
       self.right(200)
     }
 
+    func lowercaseo () {
+    //lowercaseo
+    //move to the right
+    self.left(350)
+    self.curve(withSides: -90, withSize: 6, drawSides: 10)
+    //Loop Up
+    self.left(20)
+    self.curve(withSides: 20, withSize: 7, drawSides: 11)
+    //Loop down
+    self.left(2)
+    self.curve(withSides: 15, withSize: 10, drawSides: 8)
+
+    }
+
 }
