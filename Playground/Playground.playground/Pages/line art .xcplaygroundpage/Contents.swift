@@ -3,7 +3,7 @@ import TortoiseGraphics
 import CoreGraphics
 let myFrame = CGRect(x: 0, y: 0, width: 500, height: 500)
 let canvas = PlaygroundCanvas (frame:myFrame)
-canvas.frameRate = 300
+canvas.frameRate = 3000
 canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
@@ -74,7 +74,8 @@ canvas.drawing { turtle in
     turtle.penDown()
     turtle.setH(240)
     turtle.curve(withSides: 25,withSize: 40, drawSides:3)
-   //Move down
+  
+    //Move down
     turtle.penUp()
     turtle.forward(30)
     turtle.right(90)
@@ -82,14 +83,17 @@ canvas.drawing { turtle in
     turtle.left(180)
     turtle.penDown()
     turtle.forward(50)
+  
     //Curve
     turtle.right(50)
     turtle.curve(withSides: -35,withSize: 10, drawSides:6)
+   
     //Move down
     turtle.setH(220)
     turtle.penDown()
     turtle.forward(100)
-    //Move up 
+   
+    //Move up
     turtle.penUp()
     turtle.setH(360)
     turtle.forward(150)
@@ -97,6 +101,28 @@ canvas.drawing { turtle in
     turtle.forward(50)
     turtle.left(90)
    
+    //Move to the neck
+    turtle.penDown()
+    turtle.forward(50)
+    turtle.curve(withSides: 50, withSize: 3, drawSides:8)
+    turtle.right(310)
+    turtle.curve(withSides: -40,withSize: 13, drawSides: 6)
+    
+    //Move to the mouth
+    turtle.left(110)
+    turtle.curve(withSides: 40,withSize: 11, drawSides: 6)
+    turtle.left(70)
+    turtle.curve(withSides: 40,withSize: 5, drawSides: 6)
+    turtle.right(90)
+    turtle.curve(withSides: 40,withSize: 10, drawSides: 6)
+    turtle.penDown()
+    turtle.forward(80)
+    
+    
+    
+    
+    
+    
 }
 
 
