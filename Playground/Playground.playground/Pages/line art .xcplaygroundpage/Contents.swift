@@ -118,9 +118,18 @@ canvas.drawing { turtle in
     turtle.penDown()
     turtle.forward(80)
     
+    //Move to the ears
+    turtle.penUp()
+    turtle.setH(90)
+    turtle.forward(20)
+    turtle.penDown()
+    turtle.left(70)
+    turtle.forward(30)
+    turtle.right(120)
+    turtle.forward(30)
     
-    
-    
+  
+
     
     
 }
