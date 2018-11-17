@@ -13,6 +13,7 @@ canvas.drawing { turtle in
     //Set penwidth
     turtle.penSize(4)
     
+    //Body of th horse
     //Curve down
     turtle.penUp()
     turtle.setH(320)
@@ -118,20 +119,26 @@ canvas.drawing { turtle in
     turtle.penDown()
     turtle.forward(80)
     
+    //Set penwidth
+    turtle.penSize(2)
     //Move to the ears
     turtle.penUp()
     turtle.setH(90)
-    turtle.forward(20)
+    turtle.forward(10)
     turtle.penDown()
     turtle.left(70)
     turtle.forward(30)
     turtle.right(120)
     turtle.forward(30)
     
-  
-
-    
-    
+  //Move to the hair
+    turtle.right(290)
+    turtle.curve(withSides: 20,withSize: 35, drawSides: 3)
+    turtle.curve(withSides: -20,withSize: 25, drawSides:3)
+    turtle.right(180)
+    turtle.curve(withSides: 20,withSize: 35, drawSides:3)
+    // Hide the tortoise
+    turtle.hideTortoise()
 }
 
 
