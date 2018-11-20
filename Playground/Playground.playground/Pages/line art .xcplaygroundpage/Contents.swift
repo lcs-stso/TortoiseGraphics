@@ -137,12 +137,51 @@ canvas.drawing { turtle in
     turtle.curve(withSides: -20,withSize: 25, drawSides:3)
     turtle.right(180)
     turtle.curve(withSides: 20,withSize: 35, drawSides:3)
-    // Hide the tortoise
-    turtle.hideTortoise()
     
 
+    
+    turtle.penUp()
+    turtle.goto(120,200)
+    turtle.penDown()
+    for _ in 1...50 {
+      
+        // Turn a random amount
+    let turn = turtle.random(360)
+    turtle.left(turn)
         
-
-
-
+        // Draw a random line length
+    let distance = turtle.random(150)
+    turtle.forward(distance)
+        
+        // Go back to centre of canvas and original heading
+    turtle.penUp()
+    turtle.goto(120,200)
+    turtle.setHeading(0)
+    turtle.penDown()
+        
+        // Hide the turtle when done
+        turtle.hideTortoise()
+        
+    
+    }
+    turtle.penUp()
+    turtle.goto(70,230)
+    turtle.penDown()
+    
+    // Draw 10 small circles rotated around the origin
+    for _ in 1...10 {
+    turtle.right(20)
+        
+        // Draw a small circle
+    for _ in 1...10{
+    turtle.right(20)
+    turtle.forward(20)
+            
+        }
+        
+        
+    }
+    
+  
 }
+
