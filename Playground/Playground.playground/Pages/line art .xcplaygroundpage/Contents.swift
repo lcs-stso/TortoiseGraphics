@@ -139,6 +139,10 @@ canvas.drawing { turtle in
     turtle.curve(withSides: 20,withSize: 35, drawSides:3)
     // Hide the tortoise
     turtle.hideTortoise()
+    
+
+        
+
+
+
 }
-
-
