@@ -10,9 +10,7 @@ PlaygroundPage.current.liveView = canvas
 //Start drawing
 canvas.drawing { turtle in
     //Draw a square
-    turtle.penColor(.orange)
-    turtle.fillColor(.orange)
-    turtle.beginFill()
+  
     //loop ten times
     for _ in 1...36 {
         //Loop 4 times

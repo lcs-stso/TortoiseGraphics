@@ -1,5 +1,45 @@
 public extension Tortoise {
 
+    func flower(atX x: Double, atY y: Double) {
+
+        // Go to the centre point
+        self.penUp()
+        self.goto(x, y)
+        self.penDown()
+
+        for _ in 1...50 {
+        self.drawtriangle()
+        self.right(20)
+        }
+        // Go back to centre of canvas and original heading
+        self.penUp()
+        self.goto(0, 0)
+        self.setHeading(0)
+        self.penDown()
+
+        // Return to centre point of this flower
+        self.penUp()
+        self.goto(x, y)
+        self.setHeading(0)
+        self.penDown()
+
+    }
+    
+    func randomTravel( size : Int) {
+        
+        // Turn a random amount
+        for _ in 1...size{
+            let turn = self.random(360)
+            self.left(turn)
+            
+            randomTravel( size: 10)
+            
+            // Draw a random line length
+            let distance = self.random(130)
+            self.forward(distance)
+        }
+    }
+
     func square(withSize size: Double ) {
 
         //self refers to any instance of the
@@ -206,12 +246,15 @@ public extension Tortoise {
 
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
+    func drawtriangle () {
+
+        self.left(90)
+        self.forward(100)
+        self.right(120)
+        self.forward(100)
+        self.right(60)
+        self.right(60)
+        self.forward(100)
+    }
+
 }

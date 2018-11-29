@@ -153,7 +153,7 @@ canvas.drawing { turtle in
     let distance = turtle.random(150)
     turtle.forward(distance)
         
-        // Go back to centre of canvas and original heading
+        // Go back to upper part  of canvas and original heading
     turtle.penUp()
     turtle.goto(120,200)
     turtle.setHeading(0)
