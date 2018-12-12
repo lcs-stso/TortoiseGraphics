@@ -23,4 +23,19 @@ canvas.drawing { turtle in
 }
     turtle.curve(withSides: 40, withSize: 15, drawSides: 11)
 }
-
+//Draw the stem of flower
+turtle.penUp()
+turtle.goto(-165, -60)
+turtle.setH(180)
+turtle.forward(100)
+turtle.left(20)
+turtle.curve(withSides: 40, withSize: 15, drawSides: 11)
+turtle.goto(-165, -60)
+turtle.setH(180)
+turtle.forward(100)
+turtle.left(20)
+turtle.curve(withSides: 40, withSize: 15, drawSides: 3)
+//Draw the leave of the flower
+turtle.left(110)
+turtle.curve(withSides: 40, withSize: 15, drawSides: 3)
+turtle.curve(withSides: -40, withSize: 15, drawSides: 3)
