@@ -31,9 +31,32 @@ turtle.curve(withSides: 40, withSize:15, drawSides: 3)
 
 //Draw the leave of the flower
 turtle.left(110)
+ 
 turtle.curve(withSides: 40, withSize: 15, drawSides: 3)
 turtle.curve(withSides: -40, withSize: 15, drawSides: 3)
-turtle.right(170)
+turtle.left(190)
 turtle.curve(withSides: 40, withSize: 15, drawSides: 3)
 turtle.curve(withSides: -40, withSize: 15, drawSides: 3)
+
+
+//Draw the stem of another flower
+ 
+turtle.goto(175, -160)
+turtle.setH(180)
+turtle.left(20)
+turtle.curve(withSides: 40, withSize: 15, drawSides: 11)
+turtle.goto(175, -160)
+turtle.setH(180)
+turtle.left(20)
+turtle.curve(withSides: 40, withSize:15, drawSides: 3)
+    
+//Draw the leaves of another flower
+turtle.left(260)
+turtle.curve(withSides: -40, withSize: 15, drawSides: 3)
+turtle.curve(withSides: 40, withSize: 15, drawSides: 3)
+turtle.left(170)
+turtle.curve(withSides: -40, withSize: 15, drawSides: 3)
+turtle.curve(withSides: 40, withSize: 15, drawSides: 3)
+        
+
 }
