@@ -1,118 +1,61 @@
 public extension Tortoise {
 
-    func carnation(atX x: Double, atY y: Double) {
-    // Go to the centre point
-    self.penUp()
-    self.goto(x, y)
-    self.penDown()
-    // Draw 10 small circles rotated around the origin
-    for _ in 1...10 {
-    self.right(40)
-    
-    // Draw a small circle
-    for _ in 1...10 {
-    self.right(40)
-    self.forward(40)
-    
-    }
-    }
-    // Go back to centre of canvas and original heading
-    self.penUp()
-    self.goto(0, 0)
-    self.setHeading(0)
-    self.penDown()
-        
-    // Return to centre point of this flower
-    self.penUp()
-    self.goto(x, y)
-    self.setHeading(0)
-    self.penDown()
-        
-    }
-    
-    func dalia(atX x: Double, atY y: Double) {
-// Go to the centre point
-self.penUp()
-self.goto(x, y)
-self.penDown()
-// Draw 10 small circles rotated around the origin
-for _ in 1...15 {
-self.right(30)
-// Draw a small circle
-for _ in 1...10 {
-self.right(30)
-self.forward(30)
-}
-}
-// Go back to centre of canvas and original heading
-self.penUp()
-self.goto(0, 0)
-self.setHeading(0)
-self.penDown()
-        
-// Return to centre point of this flower
-self.penUp()
-self.goto(x, y)
-self.setHeading(0)
-self.penDown()
-        
-}
-    func sunflower(atX x: Double, atY y: Double) {
-
-        // Draw 10 small circles rotated around the origin
-        for _ in 1...10 {
-        self.right(20)
-
-        // Draw a small circle
-        for _ in 1...10 {
-         self.right(20)
-         self.forward(20)
-
-            }
-        }
-    }
-
-  func lily(atX x: Double, atY y: Double) {
-    // Go to the centre point
-    self.penUp()
-    self.goto(x, y)
-    self.penDown()
-    // Draw 10 small circles rotated around the origin
-    for _ in 1...10 {
-    self.right(25)
-
-    // Draw a small circle
-    for _ in 1...10 {
-     self.right(25)
-     self.forward(25)
-
-    }
-    }
-
-    // Go back to centre of canvas and original heading
-    self.penUp()
-    self.goto(0, 0)
-    self.setHeading(0)
-    self.penDown()
-
-    // Return to centre point of this flower
-    self.penUp()
-    self.goto(x, y)
-    self.setHeading(0)
-    self.penDown()
-
-    }
-
-    func flower(atX x: Double, atY y: Double) {
-
+    func grass( atX x: Double, atY y: Double) {
         // Go to the centre point
         self.penUp()
         self.goto(x, y)
         self.penDown()
+        for _ in 1...15 {
 
-        for _ in 1...50 {
-        self.drawtriangle()
-        self.right(20)
+            // Turn a random amount
+            let turn = self.random(90)
+            self.left(turn)
+
+            // Draw a squiggly line
+            randomTravel()
+            // Go back to centre of canvas and original heading
+            self.penUp()
+            self.goto(0, 0)
+            self.setHeading(0)
+            self.penDown()
+
+            // Return to middle of canvas
+            self.penUp()
+            self.goto(x, y)
+            self.setHeading(0)
+            self.penDown()
+        }
+    }
+
+    func randomTravel() {
+
+        for _ in 1...30 {
+
+            // Turn a bit
+            let turn = self.random(20) - 10
+            self.left(turn)
+
+            // Draw a random line length
+            let distance = self.random(10)
+            self.forward(distance)
+
+        }
+    }
+    func carnation(atX x: Double, atY y: Double) {
+        // Go to the centre point
+        self.penUp()
+        self.goto(x, y)
+        self.penDown()
+        // Draw 10 small circles rotated around the origin
+        for _ in 1...10 {
+            self.right(40)
+
+            // Draw a small circle
+            for _ in 1...10 {
+                self.right(40)
+                self.forward(40)
+
+            }
         }
         // Go back to centre of canvas and original heading
         self.penUp()
@@ -128,19 +71,102 @@ self.penDown()
 
     }
 
-    func randomTravel( size: Int) {
-
-        // Turn a random amount
-        for _ in 1...size {
-            let turn = self.random(360)
-            self.left(turn)
-
-            randomTravel( size: 10)
-
-            // Draw a random line length
-            let distance = self.random(130)
-            self.forward(distance)
+    func dalia(atX x: Double, atY y: Double) {
+        // Go to the centre point
+        self.penUp()
+        self.goto(x, y)
+        self.penDown()
+        // Draw 10 small circles rotated around the origin
+        for _ in 1...15 {
+            self.right(30)
+            // Draw a small circle
+            for _ in 1...10 {
+                self.right(30)
+                self.forward(30)
+            }
         }
+        // Go back to centre of canvas and original heading
+        self.penUp()
+        self.goto(0, 0)
+        self.setHeading(0)
+        self.penDown()
+
+        // Return to centre point of this flower
+        self.penUp()
+        self.goto(x, y)
+        self.setHeading(0)
+        self.penDown()
+
+    }
+    func sunflower(atX x: Double, atY y: Double) {
+
+        // Draw 10 small circles rotated around the origin
+        for _ in 1...10 {
+            self.right(20)
+
+            // Draw a small circle
+            for _ in 1...10 {
+                self.right(20)
+                self.forward(20)
+
+            }
+        }
+    }
+
+    func lily(atX x: Double, atY y: Double) {
+        // Go to the centre point
+        self.penUp()
+        self.goto(x, y)
+        self.penDown()
+        // Draw 10 small circles rotated around the origin
+        for _ in 1...10 {
+            self.right(25)
+
+            // Draw a small circle
+            for _ in 1...10 {
+                self.right(25)
+                self.forward(25)
+
+            }
+        }
+
+        // Go back to centre of canvas and original heading
+        self.penUp()
+        self.goto(0, 0)
+        self.setHeading(0)
+        self.penDown()
+
+        // Return to centre point of this flower
+        self.penUp()
+        self.goto(x, y)
+        self.setHeading(0)
+        self.penDown()
+
+    }
+
+    func flower(atX x: Double, atY y: Double) {
+
+        // Go to the centre point
+        self.penUp()
+        self.goto(x, y)
+        self.penDown()
+
+        for _ in 1...50 {
+            self.drawtriangle()
+            self.right(20)
+        }
+        // Go back to centre of canvas and original heading
+        self.penUp()
+        self.goto(0, 0)
+        self.setHeading(0)
+        self.penDown()
+
+        // Return to centre point of this flower
+        self.penUp()
+        self.goto(x, y)
+        self.setHeading(0)
+        self.penDown()
+
     }
 
     func square(withSize size: Double ) {
