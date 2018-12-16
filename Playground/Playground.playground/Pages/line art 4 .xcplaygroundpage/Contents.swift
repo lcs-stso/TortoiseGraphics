@@ -139,3 +139,7 @@ t.left(90)
 t.hideTortoise()
     
 }
+//Draw the grass
+turtle.grass(atX: -200, atY: -250)
+turtle.grass(atX: 0, atY: -250)
+turtle.grass(atX: 200, atY: -250)
