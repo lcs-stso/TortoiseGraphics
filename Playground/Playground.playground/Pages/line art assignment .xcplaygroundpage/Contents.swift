@@ -162,6 +162,7 @@ canvas.drawing { turtle in
   
     // Hide the turtle when done
     turtle.hideTortoise()
+
     
     
     
