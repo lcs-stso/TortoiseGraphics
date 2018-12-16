@@ -62,7 +62,8 @@ canvas.drawing { turtle in
     turtle.grass(atX: -200, atY: -250)
     turtle.grass(atX: 0, atY: -250)
     turtle.grass(atX: 200, atY: -250)
-    
+
+
     //Draw the butterflies
     //Draw the head of the butterfly
     turtle.penUp()
@@ -104,11 +105,66 @@ canvas.drawing { turtle in
     turtle.penUp()
     
     //Draw another butterfly
-    turtle.goto(0,200)
-    turtle.setH(90)
+    turtle.goto(90,140)
+    //Draw the body and head of the butterfly
     turtle.penDown()
-
-
+    turtle.curve(withSides: 10, withSize: 6, drawSides: 5)
+    turtle.curve(withSides: 10, withSize: 6, drawSides: 5)
+    turtle.goto(88,125)
+    turtle.penDown()
+    turtle.left(10)
+    turtle.forward(40)
+    turtle.curve(withSides: 9, withSize: 6, drawSides: 5)
+    turtle.penDown()
+    turtle.forward(40)
+    turtle.curve(withSides: 22, withSize: 13, drawSides: 5)
+    turtle.curve(withSides: 10, withSize: 6, drawSides: 5)
+    //Draw the wings of the butterfly
+    turtle.goto(88,125)
+    turtle.right(70)
+    turtle.curve(withSides: -22, withSize: 13, drawSides: 5)
+    turtle.curve(withSides: -10, withSize: 6, drawSides: 5)
+    turtle.goto(88,125)
+    turtle.left(20)
+    turtle.curve(withSides: 27, withSize: 20, drawSides: 6)
+    turtle.curve(withSides: -10, withSize: 6, drawSides: 5)
+    turtle.left(60)
+    turtle.penDown()
+    turtle.forward(20)
+    turtle.left(40)
+    turtle.curve(withSides: 27, withSize: 15, drawSides: 6)
+    turtle.curve(withSides: 10, withSize: 6, drawSides: 5)
+    turtle.right(20)
+    turtle.penDown()
+    turtle.forward(30)
+    turtle.curve(withSides: 27, withSize: 13, drawSides: 6)
+    turtle.right(70)
+    turtle.curve(withSides: 27, withSize: 13, drawSides: 6)
+    turtle.curve(withSides: -18, withSize: 8, drawSides: 5)
+    //Draw another wing
+    turtle.penUp()
+    turtle.right(60)
+    turtle.curve(withSides: -27, withSize: 20, drawSides: 6)
+    turtle.curve(withSides: 10, withSize: 6, drawSides: 5)
+    turtle.right(60)
+    turtle.penDown()
+    turtle.forward(20)
+    turtle.right(60)
+    turtle.curve(withSides: -18, withSize: 15, drawSides: 6)
+    turtle.curve(withSides: -10, withSize: 6, drawSides: 5)
+    turtle.left(40)
+    turtle.penDown()
+    turtle.forward(20)
+    turtle.curve(withSides: -27, withSize: 13, drawSides: 6)
+    turtle.left(70)
+    turtle.curve(withSides: -27, withSize: 13, drawSides: 6)
+    turtle.curve(withSides: 9, withSize: 8, drawSides: 5)
+  
+    // Hide the turtle when done
+    turtle.hideTortoise()
+    
+    
+    
 }
 
 
