@@ -2,9 +2,9 @@ import PlaygroundSupport
 import TortoiseGraphics
 import CoreGraphics
 
-let myFrame = CGRect(x: 0, y: 0, width: 500, height: 500)
+let myFrame = CGRect(x: 0, y: 0, width: 725, height: 500)
 let canvas = PlaygroundCanvas(frame: myFrame)
-canvas.frameRate = 50000
+canvas.frameRate = 1000
 canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
@@ -12,9 +12,9 @@ PlaygroundPage.current.liveView = canvas
 canvas.drawing { turtle in
     
     //Draw the petals of flower
-    turtle.carnation(atX: -190, atY: -50)
-    turtle.dalia(atX: -80, atY: -20)
-    turtle.carnation(atX: 150, atY: -50)
+    turtle.carnation(atX: -220, atY: -50)
+    turtle.dalia(atX: -100, atY: -20)
+    turtle.carnation(atX: 170, atY: -50)
     
     //Draw the stem of flower
     turtle.penUp()
@@ -60,9 +60,14 @@ canvas.drawing { turtle in
     
     //Draw the grass
     turtle.grass(atX: -200, atY: -250)
+    turtle.grass(atX: -150, atY: -250)
+     turtle.grass(atX: -70, atY: -250)
     turtle.grass(atX: 0, atY: -250)
-    turtle.grass(atX: 200, atY: -250)
-
+    turtle.grass(atX: 70, atY: -250)
+      turtle.grass(atX:110, atY: -250)
+    turtle.grass(atX: 170, atY: -250)
+    turtle.grass(atX: 230, atY: -250)
+    turtle.grass(atX: 270, atY: -250)
 
     //Draw the butterflies
     //Draw the head of the butterfly
