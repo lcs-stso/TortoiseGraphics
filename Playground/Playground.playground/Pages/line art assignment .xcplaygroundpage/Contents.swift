@@ -163,7 +163,7 @@ canvas.drawing { turtle in
     turtle.curve(withSides: -27, withSize: 13, drawSides: 6)
     turtle.left(70)
     turtle.curve(withSides: -27, withSize: 13, drawSides: 6)
-    turtle.curve(withSides: 9, withSize: 8, drawSides: 5)
+    turtle.curve(withSides: 6, withSize: 8, drawSides: 5)
   
     // Hide the turtle when done
     turtle.hideTortoise()
